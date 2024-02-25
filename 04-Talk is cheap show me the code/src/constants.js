@@ -1,7 +1,9 @@
+// Named export
 export const IMG_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
 export const logoPicURL = "https://s3-alpha.figma.com/hub/file/3309376961/162fdd50-cd60-4a96-b826-e4f0fe4d9be5-cover.png";
 
+// Default export
 export const restaurants =  [
     {
         "info": {

@@ -1,12 +1,14 @@
-import RestaurantCard from "./RestaurantCard"
-import { restaurants } from "../constants";
+import RestaurantCard from "./RestaurantCard" // Default import
+import { restaurants } from "../constants"; // Named Import
+import SearchBar from "./SearchBar";
 
 const Body = function () {
     return (
         <div className="body">
-        { restaurants.map((rest)=>(
-            <RestaurantCard resData={rest} key={rest.info.id}/>
-            )) }
+            <SearchBar />
+            { restaurants.map((rest)=>(
+                <RestaurantCard resData={rest} key={rest.info.id}/>
+                )) }
         </div>
     )
 }
